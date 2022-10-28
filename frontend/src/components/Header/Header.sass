@@ -1,0 +1,42 @@
+@use '../../styles/colors' as *
+@use '../../styles/variables' as *
+@use '../../styles/placeholders' as *
+@use '../../styles/mixins' as *
+
+header
+  padding: $u-300
+  background: url('../../images/main_bg_1.jpg') top center / cover no-repeat
+  height: 100vh
+  width: 100vw
+  position: relative
+  @extend %flex-center, %flex-col
+
+  &::before
+    content: ''
+    background: rgba(0 ,0, 0, .7)
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 0
+
+  & > *
+    position: relative
+    z-index: 1
+    color: $clr-mono-900
+
+.header-content
+  width: 58%
+  height: 100%
+  @extend %flex-center, %flex-col
+  justify-content: center
+
+  & > *
+    margin: $u-300 0
+
+  & h1
+    text-align: center
+
+  & a
+    @include btn

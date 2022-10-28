@@ -1,0 +1,17 @@
+@use 'colors' as *
+@use 'variables' as *
+@use 'fonts' as *
+
+/**** Mixins ****/
+@mixin btn ($bg: transparent, $clr: $clr-accent-400)
+  font: normal normal 500 1.8rem $font-3
+  // letter-spacing: .3rem
+  color: $clr
+  text-transform: uppercase
+  background: $bg
+  padding: $u-200 $u-400
+  border: .2rem solid $clr
+  border-radius: .2rem
+  &:hover
+    background: $clr-accent-400
+    color: white
