@@ -1,0 +1,17 @@
+@use '../../styles/colors' as *
+@use '../../styles/variables' as *
+
+.about
+  width: 100%
+  .about-main
+    width: 100%
+    padding: $u-400
+    & img
+      width: 100%
+      @include clr-filter-400
+    & h2
+      font-size: 2.4rem
+      color: $clr-mono-400
+    & .line
+      height: $u-200
+      border-bottom: .1rem solid $clr-mono-700
