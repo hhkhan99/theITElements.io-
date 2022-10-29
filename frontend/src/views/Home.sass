@@ -1,0 +1,24 @@
+@use'../styles/variables' as v
+@use '../styles/colors' as c
+@use '../styles/fonts' as f
+@use '../styles/mixins' as m
+@use '../styles/placeholders' as p
+
+.case-studies
+  text-align: center
+  background: c.$clr-mono-800
+  margin-top: v.$u-700
+  @include m.padding-view
+  & h2
+    font-family: f.$font-6
+    font-weight: 300
+    font-size: 2.8rem
+    padding: v.$u-200
+  & p
+    font-size: 2rem
+    color: c.$clr-mono-300
+  & div
+    display: block
+    padding: v.$u-700 0
+    & a
+      @include m.btn
