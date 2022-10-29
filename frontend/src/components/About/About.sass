@@ -1,17 +1,20 @@
 @use '../../styles/colors' as *
 @use '../../styles/variables' as *
+@use '../../styles/mixins' as m
 
 .about
   width: 100%
   .about-main
     width: 100%
-    padding: $u-400
+    @include m.padding-view
     & img
       width: 100%
-      @include clr-filter-400
+      @include clr-accent-400
     & h2
       font-size: 2.4rem
       color: $clr-mono-400
-    & .line
+  .line
       height: $u-200
       border-bottom: .1rem solid $clr-mono-700
+  .about-cards
+    @include m.padding-view

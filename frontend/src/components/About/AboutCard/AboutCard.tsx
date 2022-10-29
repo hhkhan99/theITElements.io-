@@ -1,4 +1,4 @@
-import 'AboutCard.sass'
+import './AboutCard.sass'
 
 type AboutCardType = {
   img: string,

@@ -1,0 +1,15 @@
+@use '../../../styles/colors' as *
+@use '../../../styles/_variables' as *
+
+.about-card
+  padding: $u-400 0 $u-300 0
+  text-align: center
+  & h3
+    color: $clr-mono-500
+    letter-spacing: .2rem
+    font-weight: 600
+    padding-bottom: $u-300
+  & img
+    width: 60%
+    height: auto
+    @include clr-accent-500

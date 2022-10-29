@@ -1,18 +1,12 @@
 import React from 'react';
 
 import './App.sass';
-import Header from './components/Header/Header';
-import AboutCard from './components/About/About';
-
-import robot from './images/lp/robot.svg'
+import Home from './views/Home'
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <main>
-        <AboutCard />
-      </main>
+      <Home></Home>
     </div>
   );
 }
