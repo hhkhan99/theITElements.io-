@@ -1,7 +1,7 @@
 import './About.sass';
 import AboutCard from './AboutCard/AboutCard'
 
-import robot from '../../images/lp/robot.svg'
+import robot from '../../images/lp/robot.png'
 import ui from '../../images/lp/ui.svg'
 import se from '../../images/lp/software.svg'
 import ds from '../../images/lp/data-science.svg'
@@ -9,10 +9,6 @@ import ts from '../../images/lp/technology.svg'
 import he from '../../images/lp/hardware.svg'
 
 export default function About () {
-  const cardImgs = [
-    'hardware', 'platform', 'software', 'technology', 
-    'ui', 'data-science'
-  ]
   return (
     <section className="about">
       <section className="about-main">

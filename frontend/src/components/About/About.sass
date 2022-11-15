@@ -1,5 +1,5 @@
-@use '../../styles/colors' as *
-@use '../../styles/variables' as *
+@use '../../styles/colors' as c
+@use '../../styles/variables' as v
 @use '../../styles/mixins' as m
 
 .about
@@ -9,12 +9,10 @@
     @include m.padding-view
     & img
       width: 100%
-      @include clr-accent-400
     & h2
-      font-size: 2.4rem
-      color: $clr-mono-400
+      color: c.$clr-mono-400
   .line
-      height: $u-200
-      border-bottom: .1rem solid $clr-mono-700
+      height: v.$u-200
+      border-bottom: .1rem solid c.$clr-mono-700
   .about-cards
     @include m.padding-view

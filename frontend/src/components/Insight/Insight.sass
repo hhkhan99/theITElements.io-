@@ -1,0 +1,30 @@
+@use '../../styles/colors' as c
+@use '../../styles/mixins' as m
+@use '../../styles/variables' as v
+@use '../../styles/fonts' as f
+
+.insight
+  padding-bottom: v.$u-400
+  & img
+    max-width: 100%
+    object-fit: cover
+    height: calc(100vw - (v.$u-400 + v.$u-400))
+  & a
+    color: c.$clr-mono-500
+    padding: v.$u-400
+    & h3
+      font-family: f.$font-6
+      font-size: f.$font-100
+      font-weight: 600
+      letter-spacing: .19rem
+  & p
+    font-family: f.$font-2
+    font-size: f.$font-100
+    color: c.$clr-mono-500
+    line-height: 2rem
+    padding-bottom: v.$u-200
+  & a:last-of-type
+    padding-left: 0
+    font-size: f.$font-100
+    color: c.$clr-accent-400
+

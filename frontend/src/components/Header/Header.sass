@@ -1,10 +1,10 @@
-@use '../../styles/colors' as *
-@use '../../styles/variables' as *
+@use '../../styles/colors' as c
+@use '../../styles/variables' as v
 @use '../../styles/placeholders' as *
-@use '../../styles/mixins' as *
+@use '../../styles/mixins' as m
 
 header
-  padding: $u-300
+  padding: v.$u-300
   background: url('../../images/main_bg_1.jpg') top center / cover no-repeat
   height: 100vh
   width: 100vw
@@ -24,19 +24,20 @@ header
   & > *
     position: relative
     z-index: 1
-    color: $clr-mono-900
+    color: c.$clr-mono-900
 
 .header-content
-  width: 58%
+  width: 80%
   height: 100%
   @extend %flex-center, %flex-col
   justify-content: center
 
   & > *
-    margin: $u-300 0
+    margin: v.$u-300 0
 
   & h1
     text-align: center
-
+    & span
+      display: block
   & a
-    @include btn
+    @include m.btn
