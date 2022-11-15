@@ -1,20 +1,24 @@
-@use 'colors' as *
-@use 'variables' as *
-@use 'fonts' as *
+@use 'colors' as c
+@use 'variables' as v
+@use 'fonts' as f
 
 /**** Mixins ****/
-@mixin btn ($bg: transparent, $clr: $clr-accent-400)
-  font: normal normal 500 1.8rem $font-3
+@mixin btn ($bg: transparent, $brClr: c.$clr-accent-400, $txtClr: c.$clr-accent-400)
+  font: normal normal 500 f.$font-300 f.$font-3
   // letter-spacing: .3rem
-  color: $clr
+  color: $txtClr
   text-transform: uppercase
+  line-height: (v.$u-200 * 2) + f.$font-300
   background: $bg
-  padding: $u-200 $u-400
-  border: .2rem solid $clr
+  padding: 0 v.$u-400
+  border: .2rem solid $brClr
   border-radius: .2rem
   &:hover
-    background: $clr-accent-400
+    background: c.$clr-accent-400
     color: white
 
 @mixin padding-view()
-  padding: $u-400 $u-400 0 $u-400
+  padding: v.$u-400 v.$u-400 0 v.$u-400
+
+@mixin padding-view-all()
+  padding: v.$u-400

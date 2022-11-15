@@ -7,7 +7,10 @@ export default function Header () {
     <header>
       <HeaderNav />
       <section className="header-content">
-        <h1>We are creating a new future.</h1>
+        <h1>
+          <span>We are creating</span>
+          <span>a new future</span>
+        </h1>
         <p>Dialexa is joining IBM.</p>
         <a href="#">find out more</a>
       </section>

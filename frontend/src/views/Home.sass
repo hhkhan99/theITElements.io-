@@ -18,7 +18,72 @@
     font-size: 2rem
     color: c.$clr-mono-300
   & div
-    display: block
+    width: 100%
+    @extend %flex-center
     padding: v.$u-700 0
+    & a
+      @include m.btn
+
+.testimonials
+  width: 100%
+  @include m.padding-view
+  background: c.$clr-mono-100
+  & .testimonial_1
+    width: 100%
+    padding-bottom: v.$u-300
+    & video
+      width: 100%
+      height: auto
+  & .testimonial_2
+    width: 100%
+    & img
+      width: 100%
+      height: auto
+    & h2
+      text-align: right
+      text-transform: uppercase
+      font-style: italic
+      font-size: f.$font-200
+      font-weight: 600
+      color: c.$clr-mono-800
+      padding: v.$u-200 0
+    & p
+      font-size: f.$font-400
+      color: c.$clr-mono-900
+      letter-spacing: normal
+      padding-bottom: v.$u-300
+
+.clients
+  width: 100%
+  @include m.padding-view-all
+  & h2
+    font-family: f.$font-6
+    font-weight: 300
+    color: c.$clr-mono-400
+    text-align: center
+  & .client_icons
+    width: 100%
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    justify-content: space-between
+    align-items: center
+  & img
+    width: 100%
+    height: auto
+    padding: v.$u-300 v.$u-300 0 v.$u-300
+    &:nth-child(even)
+      justify-self: end
+
+.insights
+  width: 100%
+  @include m.padding-view-all
+  background: c.$clr-mono-850
+  & h2
+    font: normal normal 300 f.$font-700 f.$font-6
+    text-align: center
+    padding: v.$u-400 0
+  & div
+    width: 100%
+    @extend %flex-center
     & a
       @include m.btn
