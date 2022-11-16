@@ -42,3 +42,62 @@ footer
       @extend %flex-center
       & a
         @include m.btn($bg: c.$clr-accent-400, $txtClr: c.$clr-mono-900)
+
+  & .contact
+    width: 100
+    background: c.$clr-mono-100
+    color: c.$clr-mono-900
+    @include m.setPadding
+    & h2
+      text-align: center
+      text-transform: uppercase
+      letter-spacing: .3rem
+      @include m.setPadding($right: 0, $left: 0)
+    & section
+      width: 100%
+      @include m.setPadding($top: v.$u-200, $right: 0, $bottom: v.$u-200, $left: 0)
+      @extend %flex-center, %flex-col
+      font-size: f.$font-400
+      & h3
+        font-weight: 700
+        text-transform: none
+      & a
+        color: c.$clr-mono-900
+        font-size: f.$font-400
+      & span
+        text-transform: uppercase
+
+  & .copyright
+    background: c.$clr-mono-100
+    color: c.$clr-mono-900
+    @include m.setPadding
+    @extend %flex-center, %flex-col
+    & span
+      font-size: f.$font-300
+      font-weight: 300
+
+  & .footer-social
+    background: c.$clr-mono-100
+    color: c.$clr-mono-900
+    width: 100%
+    padding: 0 v.$u-200 v.$u-200 v.$u-200
+    @extend %flex-center
+    justify-content: space-evenly
+    & img
+      width: 3rem
+      height: auto
+
+  & .footer-links
+    width: 100%
+    background: c.$clr-mono-100
+    color: c.$clr-mono-900
+    text-align: center
+    @include m.setPadding
+    & a
+      // background: greens
+      color: c.$clr-mono-800
+      font-size: f.$font-200
+      line-height: f.$font-900
+      padding-bottom: .4rem
+      border-bottom: 1px solid c.$clr-mono-800
+      margin: 0 v.$u-100 v.$u-600 0
